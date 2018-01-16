@@ -21,6 +21,18 @@
         <!--         </activity> -->
 
         <!-- 客户端app -->
+
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTop"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".EchoClientActivity"
             android:label="@string/title_activity_echo_client"
@@ -32,12 +44,7 @@
         <activity android:name=".EchoServerActivity"
             android:launchMode="singleTop"
             >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
